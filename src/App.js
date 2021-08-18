@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <Fragment>
       <Header titulo="NSE - News Search Engine" />
       <div className="container white">
-        <h1>Open your doors!</h1>
+        <Formulario />
       </div>
     </Fragment>
   );
