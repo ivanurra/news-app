@@ -20,13 +20,13 @@ const Formulario = ({ guardarCategoria }) => {
   const buscarNoticias = (e) => {
     e.preventDefault();
 
-    guardarCategoria();
+    guardarCategoria(categoria);
   };
 
   return (
     <div className={`${styles.buscador} row`}>
       <div className="col s12 m8 offset-m2">
-        <form>
+        <form onSubmit={buscarNoticias}>
           <h4 className={styles.heading}>Encuentra noticias por Categoría</h4>
           <SelectNoticias />
           <div className="input-field col s12">
