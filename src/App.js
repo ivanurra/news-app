@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
+import ListadoNoticias from "./components/ListadoNoticias";
 
 function App() {
   // Definir la categoría y noticas
@@ -27,6 +28,7 @@ function App() {
       <Header titulo="NSE - News Search Engine" />
       <div className="container white">
         <Formulario guardarCategoria={guardarCategoria} />
+        <ListadoNoticias noticias={noticias}/>
       </div>
     </Fragment>
   );
