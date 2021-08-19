@@ -1,13 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 
 function App() {
+  // Definir la categoría y noticas
+  const [categoria, guardarCategoria] = useState("");
+
   return (
     <Fragment>
       <Header titulo="NSE - News Search Engine" />
       <div className="container white">
-        <Formulario />
+        <Formulario guardarCategoria={guardarCategoria} />
       </div>
     </Fragment>
   );
